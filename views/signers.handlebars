@@ -1,0 +1,8 @@
+{{#name}}
+    <ul>
+        <li id="signers">
+            {{#if this.url}}<a href="https://{{this.url}}"> {{this.first}} {{this.last}}</a> {{else}} {{this.first}} {{this.last}} {{/if}}
+            {{#if this.age}}({{this.age}}{{#if this.city}}, <a href="/signers/{{city}}">{{this.city}}</a>{{/if}}){{/if}}
+        </li>
+    </ul>
+{{/name}}

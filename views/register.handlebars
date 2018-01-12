@@ -1,0 +1,17 @@
+<div id="container3">
+    <h1 id="register_error">{{error}}</h1>
+    <form action="/register" method="POST">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+            <h3>Create an account</h3>
+            <ul id="register">
+            <li><input type="text" name="first" placeholder="first name"></li>
+            <li><input type="text" name="last" placeholder="last name"></li>
+            <li><input type="email" name="email" placeholder="email address"></li>
+            <li><input type="password" name="password" placeholder="password"></li>
+            <button class="register_btn" type="submit">SIGN UP</button>
+            </ul>
+    </form>
+    <div id="getting_started">
+        <h2>Already a member?, please <a href="/login"> log in </a></h2>
+    </div>
+</div>

@@ -1,8 +1,18 @@
-#Petition
+# Petition
+
+## Summary:
+A Petition for protecting Spanish Galgos (Greyhounds) from legal tradtitional tortures by hunters in Spain.
+
+## Tech Stack:
+* Node.js, express.js
+* PostgreSQL Database
+* Redis
+
+## Features
 
 * Users registeration and user login
 
-<img src='public/Register.gif' >
+<img src='public/images/Register.gif' >
 
 * Users have the option to provide some information about themselves.
 

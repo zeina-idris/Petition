@@ -1,0 +1,9 @@
+<div id="signed">
+    <h3>Thank you for signing our petition and for agreeing on saving <br>these precious species.<h3>
+    <img class="signature" src="{{signature}}"><br>
+    <a href="/signers">View other supporters</a>
+    <form action="/deletesignature" method="post">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <button class="delete_btn" type="submit">Delete signature</button>
+    </form>
+</div>

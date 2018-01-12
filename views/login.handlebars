@@ -1,0 +1,14 @@
+<form action="/login" method="POST">
+
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <ul id="login">
+        <h2>Log in</h2>
+        <div id="error">{{error}}</div>
+        <li><input type="email" name="email" placeholder="email address"></li>
+        <li><input type="password" name="password" placeholder="password"></li>
+        <li><button class="login_btn" type="submit">Log in</button></li>
+    </ul>
+    <div id="getting_started">
+        <h2>Not a member? Sign up <a href="/register">here</a> </h2>
+    </div>
+</form>
