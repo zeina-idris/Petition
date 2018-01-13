@@ -10,18 +10,6 @@ A Petition for protecting Spanish Galgos (Greyhounds) from legal tradtitional to
 
 ## Features
 
-# Petition
-
-## Summary:
-A Petition for protecting Spanish Galgos (Greyhounds) from legal tradtitional tortures by hunters in Spain.
-
-## Tech Stack:
-* Node.js, express.js
-* PostgreSQL Database
-* Redis
-
-## Features
-
 * Users registeration and user login
 
 <img src='public/images/Register.gif' >
