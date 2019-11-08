@@ -48,7 +48,7 @@ a {
 }
 
 #error {
-  font-size: 15px;
+  font-size: 10px;
   color: #BB3622;
 }
 
@@ -157,7 +157,7 @@ input[type=email] {
   background-color: rgba(249, 249, 249, 0.797);
   padding: 10px;
   width: 500px;
-  height: 450px;
+  height: 550px;
   font-size: 20px; 
   border-radius: 5px;
 }
@@ -205,7 +205,7 @@ input[type=email] {
   background-color: rgba(249, 249, 249, 0.797);
   padding: 10px;
   width: 500px;
-  height: 350px;
+  height: 450px;
   font-size: 20px; 
   border-radius: 5px;
 }
@@ -245,7 +245,7 @@ input[type=email] {
   background-color: rgba(249, 249, 249, 0.797);
   padding: 10px;
   width: 500px;
-  height: 350px;
+  height: 360px;
   font-size: 20px; 
   border-radius: 5px;
 }
@@ -331,17 +331,10 @@ input[type=email] {
 }
 
 .edit_btn {
-  position: relative;
-  right: 37%;
-  margin-top: 40px;
-  background-color: transparent;
-  text-align: center;
-  border: solid 1px white;
-  background-color: transparent;
-  height: 30px;
+  background-color: transparent;  
+  height: 40px;
+  border: solid 1px #3d48525b;
 }
-
-
 
 h3 p a {
   display: flex;
