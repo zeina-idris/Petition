@@ -1,6 +1,6 @@
 # Petition
 
-You can find the deployed version on:
+You can find the latest deployed version on:
 https://nutmeg-petition.herokuapp.com/homepage
 
 ## Summary:
