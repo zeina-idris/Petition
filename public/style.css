@@ -263,10 +263,9 @@ input[type=email] {
 }
 
 .info_btn{
-  border: solid 1px white;
-  background-color: transparent;
-  height: 30px;
-  text-align: center;
+  background-color: transparent;  
+  height: 40px;
+  border: solid 1px #3d48525b;
 }
 
 
