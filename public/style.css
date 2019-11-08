@@ -42,43 +42,6 @@ a {
   color: #1b2026;
 }
 
-/*info page*/
-#info ul li {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-#info li input{
-  background-color: transparent;
-  width: 300px;
-  height: 35px;
-  font-size: 20px;  
-  margin: 10px;
-}
-
-.info_btn{
-  border: solid 1px white;
-  background-color: transparent;
-  height: 30px;
-  text-align: center;
-}
-
-
-#about p{
-  line-height: 250%;
-  text-align: center;
-}
-
-#about{
-  position: relative;
-  margin-top: 100px;
-}
-
-#about .source{
-  font-size: 15px;
-}
-
 /*Petition page*/
 
 #canvasId {
@@ -274,8 +237,56 @@ input[type=email] {
   font-size: 15px;
 }
 
+
+/*info page*/
+.form-info {
+  background-color: rgba(249, 249, 249, 0.797);
+  padding: 10px;
+  width: 500px;
+  height: 350px;
+  font-size: 20px; 
+  border-radius: 5px;
+}
+
+.info {
+  display: contents;
+  text-align: center;
+}
+
+.info li input{
+  margin: auto;
+  width: 300px;
+  height: 35px;
+  margin-top: 25px;
+  border: solid 1px #3d48525b;
+  background-color: transparent;
+}
+
+.info_btn{
+  border: solid 1px white;
+  background-color: transparent;
+  height: 30px;
+  text-align: center;
+}
+
+
+#about p{
+  line-height: 250%;
+  text-align: center;
+}
+
+#about{
+  position: relative;
+  margin-top: 100px;
+}
+
+#about .source{
+  font-size: 15px;
+}
+
 /*Settings page + button*/
 #settings a {
+  color: white;
   position: absolute;
   top: 10px;
   left: 80%;

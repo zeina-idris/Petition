@@ -1,8 +1,8 @@
 <form action="/info" method="POST">
-<input type="hidden" name="_csrf" value="{{csrfToken}}">
+<input type="hidden" name="_csrf" value="{{csrfToken}}" class="form-info">
   <div id="error">{{error}}</div>
-  <div id="info">
-    <ul>
+  <div>
+    <ul class="info">
       <li>
         <input type="text" name="age" placeholder="age(optional)">
       </li>
