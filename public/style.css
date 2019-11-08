@@ -24,16 +24,6 @@ body {
   background-color: rgba(255, 255, 255, 0.801);
 }
 
-.canvas-homepage {
-  display: inline-block;
-  background-color: rgba(0, 0, 0, 0);
-  border: solid 1px black;
-  margin-top: 200px;
-  padding: 10px;
-  text-align: center;
-  width: 600px;
-}
-
 #img_bg {
   position: fixed;
   z-index: -1;
@@ -52,8 +42,16 @@ a {
 
 /*Petition page*/
 
+.canvas-homepage {
+  display: inline-block;
+  background-color: rgba(249, 249, 249, 0.797);
+  margin-top: 200px;
+  padding: 20px;
+  text-align: center;
+}
+
 #canvasId {
-  border: solid #19232c 1px;
+  border: solid #3d48525b 1px;
 }
 
 #error {
@@ -62,8 +60,9 @@ a {
 }
 
 ul .submit_btn {
-  margin-top: 20px;
-  background-color: transparent;
+  background-color: transparent;  
+  height: 40px;
+  border: solid 1px #3d48525b;
 }
 
 .submit_btn:hover {
