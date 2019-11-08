@@ -5,59 +5,56 @@ var canvas = $('#canvasId');
 var clickDrag = [];
 var paint;
 
+canvas.mousedown(function(e){
+    var mouseX = e.offsetX;
+    var mouseY = e.offsetY;
 
+    paint = true;
+    addClick(e.offsetX, e.offsetY);
+    redraw();
+});
 
-    canvas.mousedown(function(e){
-        var mouseX = e.offsetX;
-        var mouseY = e.offsetY;
-
-        paint = true;
-        addClick(e.offsetX, e.offsetY);
+canvas.mousemove(function(e){
+    if(paint) {
+        addClick(e.offsetX, e.offsetY, true);
         redraw();
-    });
+    }
+});
 
-    canvas.mousemove(function(e){
-        if(paint) {
-            addClick(e.offsetX, e.offsetY, true);
-            redraw();
-        }
-    });
+canvas.mouseleave(function(e){
+    paint = false;
+})
 
-    canvas.mouseleave(function(e){
-        paint = false;
-    })
-
-    canvas.mouseup(function(e){
-        paint = false;
-        $('input[name=signature]').val($('#canvasId')[0].toDataURL());
-    })
+canvas.mouseup(function(e){
+    paint = false;
+    $('input[name=signature]').val($('#canvasId')[0].toDataURL());
+})
 
 
-    function addClick(x, y, dragging)
-    {
-      clickX.push(x);
-      clickY.push(y);
-      clickDrag.push(dragging);
+  function addClick(x, y, dragging)
+  {
+    clickX.push(x);
+    clickY.push(y);
+    clickDrag.push(dragging);
     }
 
 
+function redraw(){
+  context.clearRect(0, 0, context.canvas.width, context.canvas.height);
 
-    function redraw(){
-      context.clearRect(0, 0, context.canvas.width, context.canvas.height);
+  context.strokeStyle = 'black';
+  context.lineJoin = "round";
+  context.lineWidth = 2.0;
 
-      context.strokeStyle = 'white';
-      context.lineJoin = "round";
-      context.lineWidth = 2.5;
-
-      for(var i=0; i < clickX.length; i++) {
-        context.beginPath();
-        if(clickDrag[i] && i){
-          context.moveTo(clickX[i-1], clickY[i-1]);
-         }else{
-           context.moveTo(clickX[i]-1, clickY[i]);
-         }
-         context.lineTo(clickX[i], clickY[i]);
-         context.closePath();
-         context.stroke();
+  for(var i=0; i < clickX.length; i++) {
+    context.beginPath();
+    if(clickDrag[i] && i){
+      context.moveTo(clickX[i-1], clickY[i-1]);
+      }else{
+        context.moveTo(clickX[i]-1, clickY[i]);
       }
-    }
+      context.lineTo(clickX[i], clickY[i]);
+      context.closePath();
+      context.stroke();
+  }
+}

@@ -51,7 +51,7 @@ a {
 }
 
 #canvasId {
-  border: solid #3d48525b 1px;
+  border: solid 1px #3d48525b;
 }
 
 #error {
@@ -62,7 +62,7 @@ a {
 ul .submit_btn {
   background-color: transparent;  
   height: 40px;
-  border: solid 1px #3d48525b;
+  border: solid 1px #1b2026;
 }
 
 .submit_btn:hover {
@@ -135,7 +135,7 @@ button {
 }
 
 input[type=text] {
-  border: 0 solid black;
+  border: 0 solid #1b2026;
   border-radius: 5px;
   width: 150px;
   height: 20px;
@@ -144,7 +144,7 @@ input[type=text] {
 
 
 input[type=password] {
-  border: 0 solid black;
+  border: 0 solid #1b2026;
   border-radius: 5px;
   width: 150px;
   height: 20px;
@@ -153,7 +153,7 @@ input[type=password] {
 
 
 input[type=email] {
-  border: 0 solid black;
+  border: 0 solid #1b2026;
   border-radius: 5px;
   width: 150px;
   height: 20px;
@@ -192,7 +192,7 @@ input[type=email] {
 .register-btn{
   background-color: transparent;  
   height: 40px;
-  border: solid 1px #3d48525b;
+  border: solid 1px #2c3e50;
 }
 
 .register_btn:hover{
@@ -237,7 +237,7 @@ input[type=email] {
 .login_btn {
   background-color: transparent;  
   height: 40px;
-  border: solid 1px #3d48525b;
+  border: solid 1px #2c3e50;
 }
 
 .login_btn:hover{
@@ -276,7 +276,7 @@ input[type=email] {
 .info_btn{
   background-color: transparent;  
   height: 40px;
-  border: solid 1px #3d48525b;
+  border: solid 1px #2c3e50;
 }
 
 
@@ -308,7 +308,7 @@ input[type=email] {
   background-color: rgba(249, 249, 249, 0.797);
   padding: 10px;
   width: 500px;
-  height: 350px;
+  height: 100%;
   font-size: 20px; 
   border-radius: 5px;
 }
@@ -342,7 +342,7 @@ input[type=email] {
 .edit_btn {
   background-color: transparent;  
   height: 40px;
-  border: solid 1px #3d48525b;
+  border: solid 1px #2c3e50;
 }
 
 h3 p a {
@@ -377,7 +377,7 @@ ul li input[type=email] {
 }
 
 .delete_btn{
-  border: solid 1px white;
+  border: solid 1px #2c3e50;
   background-color: transparent;
   height: 40px;
   text-align: center;
