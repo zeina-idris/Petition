@@ -1,410 +1,362 @@
-*{
-    box-sizing: border-box;
-    text-align: center;
+* {
+  box-sizing: border-box;
+  text-align: center;
 }
 
-
-body{
-    color: white;
-    font-size: 20px;
-    font-family: 'Muli', sans-serif;
-    margin: 0;
+body {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  font-weight: bolder;
 }
 
-
-/*Petition page*/
-
-
-#canvasId{
-    border: solid white 2px;
+/* Homepage */
+#main {
+  margin-top: 100px;
+  display: inline-block;
+  text-align: center;
 }
 
-#error{
-    font-weight: bolder;
-    color: red;
+.homepage {
+  width: 600px;
+  margin-top: 150px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.801);
 }
 
-ul .submit_btn{
-    margin-top: 20px;
-    background-color: transparent;
-    color: white;
-    font-weight: lighter;
+#img_bg {
+  position: fixed;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  left: 0;
+  top:0;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-image: url('/assets/images/home-bg.jpeg');
+  background-size: cover;
 }
 
-.submit_btn:hover{
-    color: lightblue;
-}
-
-
-/*Big title*/
-
-button{
-    margin: auto;
-    margin-top: 30px;
-    font-weight: bolder;
-    border: 0;
-    border-radius: 5px;
-    width: 150px;
-    height: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 15px;
-    cursor: pointer;
-    background-color: white;
-    margin-bottom: 20px;
-}
-
-/*Header*/
-#header{
-    background-color: rgba(0, 0, 0, 0.4);
-     position: absolute;
-     display: flex;
-     flex-direction: row;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 50px;
-     text-decoration: none;
-}
-
-/*home logo*/
-.home{
-    position: relative;
-    top: 5px;
-    left: 75%;
-    width: 40px;
-    height: 40px;
-}
-
-.about a{
-    position: absolute;
-    top: 10px;
-    left: 70%;
-    text-decoration: none;
-    color: white;
-}
-
-#loggedin_homepage{
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-
-
-
-#logout a{
-    position: absolute;
-    top: 10px;
-    left: 90%;
-    text-decoration: none;
-    color: white;
-}
-
-
-#title{
-    top: 70px;
-    left: 75%;
-    position: absolute;
-    color: beige;
-    font-family: 'Abel', sans-serif;;
-    font-size: 30px;
-    text-shadow: 4px 4px 1px black;
-}
-
-
-main{
-    position: absolute;
-    width: 100%;
-    top: 40%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-#img_bg{
-    position: fixed;
-    z-index: -1;
-    min-width: 100%;
-    min-height: 100%;
-    left: 0;
-    top:0;
-    background-color: rgba(0, 0, 0, 0.7);
-    background-image: url('/images/150821-martin-usborne-03-feat.jpg');
-    background-size: cover;
-}
-
-
-input[type=text] {
-    border: 0 solid black;
-    border-radius: 5px;
-    width: 150px;
-    height: 20px;
-    font-size: 15px;
-}
-
-
-input[type=password] {
-    border: 0 solid black;
-    border-radius: 5px;
-    width: 150px;
-    height: 20px;
-    font-size: 15px;
-}
-
-
-input[type=email] {
-    border: 0 solid black;
-    border-radius: 5px;
-    width: 150px;
-    height: 20px;
-    font-size: 15px;
-
-}
-
-
-
-/*Registeration page*/
-
-
-#register li input{
-    display: flex;
-    flex-wrap: wrap;
-    width: 500px;
-    font-size: 20px;
-    color: white;
-    font-weight: lighter;
-    margin: auto;
-    margin-top: 25px;
-    justify-content: center;
-    justify-content: space-evenly;
-    background-color: transparent;
-    height: 35px;
-}
-
-
-#loginmessage{
-    text-align: center;
-    margin: auto;
-    padding-top: 25px;
-    font-size: 25px;
-}
-
-#register_error{
-    font-size: 20px;
-    color: red;
-}
-
-.register_btn{
-    margin-top: 20px;
-    background-color: transparent;
-    color: white;
-    font-weight: lighter;
-    border: solid 1px white;
-    background-color: transparent;
-}
-
-.register_btn:hover{
-    color: lightblue;
-}
-
-div a{
-    color: white;
-}
-
-/*Signers page*/
-
-#signers{
-    list-style: none;
-}
-
-.homepage{
-    font-size: 20px;
-}
-
-/*Login page*/
-
-#login li input{
-    display: flex;
-    flex-wrap: wrap;
-    width: 500px;
-    height: 35px;
-    font-size: 20px;
-    color: white;
-    font-weight: lighter;
-    margin: auto;
-    margin-top: 25px;
-    justify-content: center;
-    justify-content: space-evenly;
-    background-color: transparent;
-}
-
-
-#login h2{
-    font-size: 30px;
-}
-
-
-.login_btn{
-    margin-top: 20px;
-    background-color: transparent;
-    color: white;
-    height: 40px;
-    font-weight: lighter;
-    border: solid 1px white;
-    background-color: transparent;
-}
-
-.login_btn:hover{
-    color: lightblue;
-}
-
-
-/*Settings page + button*/
-#settings a{
-    position: absolute;
-    top: 10px;
-    left: 80%;
-    text-decoration: none;
-    color: white;
-}
-
-#edit li{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    left: 40%;
-}
-
-#edit li input{
-    border: solid 0.5px white;
-    background-color: transparent;
-    color: white;
-    width: 300px;
-    height: 35px;
-    font-size: 20px;
-    color: white;
-    font-weight: lighter;
-    margin-left: 30px;
-}
-
-#edit a{
-    justify-content: center;
-}
-
-
-
-#edit li p{
-    display: flex;
-    position: relative;
-    left: 40px;
-    margin-bottom: 10px;
-}
-
-.edit_btn{
-    position: relative;
-    right: 37%;
-    margin-top: 40px;
-    background-color: transparent;
-    color: white;
-    font-weight: lighter;
-    text-align: center;
-    border: solid 1px white;
-    background-color: transparent;
-    height: 30px;
-}
-
-
-
-h3 p a{
-    display: flex;
-    flex-direction: row;
-}
-
-a{
-    color: white;
-}
-
-#getting_started{
-    font-size: 15px;
-}
-
-
-
-ul li{
-    list-style: none;
-}
-
-ul li input[type=text] {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-ul li input[type=password] {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-ul li input[type=email] {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/*Signed page*/
-
-.delete_btn{
-    border: solid 1px white;
-    background-color: transparent;
-    height: 40px;
-    color: white;
-    font-weight: lighter;
-    text-align: center;
+a {
+  color: #1b2026;
 }
 
 /*info page*/
 #info ul li {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 #info li input{
-    background-color: transparent;
-    color: white;
-    width: 300px;
-    height: 35px;
-    font-size: 20px;
-    color: white;
-    font-weight: lighter;
-    margin: 10px;
-
+  background-color: transparent;
+  width: 300px;
+  height: 35px;
+  font-size: 20px;  
+  margin: 10px;
 }
 
 .info_btn{
-    border: solid 1px white;
-    background-color: transparent;
-    height: 30px;
-    color: white;
-    font-weight: lighter;
-    text-align: center;
+  border: solid 1px white;
+  background-color: transparent;
+  height: 30px;
+  text-align: center;
 }
 
 
 #about p{
-    line-height: 250%;
-    text-align: center;
+  line-height: 250%;
+  text-align: center;
 }
 
 #about{
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-#about img{
-    height: 300px;
-    width: auto;
+  position: relative;
+  margin-top: 100px;
 }
 
 #about .source{
-    font-size: 15px;
+  font-size: 15px;
+}
+
+/*Petition page*/
+
+#canvasId {
+  border: solid white 2px;
+}
+
+#error {
+  color: #BB3622;
+}
+
+ul .submit_btn {
+  margin-top: 20px;
+  background-color: transparent;
+}
+
+.submit_btn:hover {
+  color: lightblue;
+}
+
+/*Big title*/
+button {
+  margin: auto;
+  margin-top: 30px;
+  border: 0;
+  border-radius: 5px;
+  width: 150px;
+  height: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+/*Header*/
+#header {
+  background-color: #19232c;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  text-decoration: none;
+}
+
+/*home logo*/
+
+.home-link {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.about a {
+  position: absolute;
+  top: 10px;
+  left: 70%;
+  text-decoration: none;
+}
+
+#loggedin_homepage {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#logout a {
+  position: absolute;
+  top: 10px;
+  left: 90%;
+  text-decoration: none;
+}
+
+#title {
+  top: 70px;
+  left: 75%;
+  position: absolute;
+  color: beige;
+  font-size: 30px;
+  text-shadow: 4px 4px 1px black;
+}
+
+input[type=text] {
+  border: 0 solid black;
+  border-radius: 5px;
+  width: 150px;
+  height: 20px;
+  font-size: 15px;
+}
+
+
+input[type=password] {
+  border: 0 solid black;
+  border-radius: 5px;
+  width: 150px;
+  height: 20px;
+  font-size: 15px;
+}
+
+
+input[type=email] {
+  border: 0 solid black;
+  border-radius: 5px;
+  width: 150px;
+  height: 20px;
+  font-size: 15px;
+}
+
+/*Registeration page*/
+.form-signup {
+  background-color: rgba(249, 249, 249, 0.797);
+  padding: 10px;
+  width: 500px;
+  height: 450px;
+  font-size: 20px; 
+  border-radius: 5px;
+}
+
+.signup {
+  display: contents;
+  text-align: center;
+}
+
+.signup li input {
+  margin: auto;
+  width: 300px;
+  height: 35px;
+  margin-top: 25px;
+  border: solid 1px #3d48525b;
+  background-color: transparent;
+}
+
+#register_error{
+  color: #BB3622;
+}
+
+.register-btn{
+  background-color: transparent;  
+  height: 40px;
+  border: solid 1px #3d48525b;
+}
+
+.register_btn:hover{
+  color: lightblue;
+}
+
+.login-message {
+  font-size: 15px;
+}
+
+/*Signers page*/
+
+#signers {
+  list-style: none;
+}
+
+/*Login page*/
+.form-login {
+  background-color: rgba(249, 249, 249, 0.797);
+  padding: 10px;
+  width: 500px;
+  height: 350px;
+  font-size: 20px; 
+  border-radius: 5px;
+}
+
+.login {
+  display: contents;
+  text-align: center;
+}
+
+.login li input {
+  margin: auto;
+  width: 300px;
+  height: 35px;
+  margin-top: 25px;
+  border: solid 1px #3d48525b;
+  background-color: transparent;
+}
+
+
+.login_btn {
+  background-color: transparent;  
+  height: 40px;
+  border: solid 1px #3d48525b;
+}
+
+.login_btn:hover{
+  color: rgb(112, 145, 155);
+}
+
+.signup-message {
+  font-size: 15px;
+}
+
+/*Settings page + button*/
+#settings a {
+  position: absolute;
+  top: 10px;
+  left: 80%;
+  text-decoration: none;
+}
+
+#edit li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  left: 40%;
+}
+
+#edit li input {
+  border: solid 0.5px white;
+  background-color: transparent;
+  width: 300px;
+  height: 35px;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+#edit a {
+  justify-content: center;
+}
+
+#edit li p {
+  display: flex;
+  position: relative;
+  left: 40px;
+  margin-bottom: 10px;
+}
+
+.edit_btn {
+  position: relative;
+  right: 37%;
+  margin-top: 40px;
+  background-color: transparent;
+  text-align: center;
+  border: solid 1px white;
+  background-color: transparent;
+  height: 30px;
+}
+
+
+
+h3 p a {
+  display: flex;
+  flex-direction: row;
+}
+
+#getting_started  {
+  font-size: 15px;
+}
+
+ul li{
+  list-style: none;
+}
+
+ul li input[type=text] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ul li input[type=password] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ul li input[type=email] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.delete_btn{
+  border: solid 1px white;
+  background-color: transparent;
+  height: 40px;
+  text-align: center;
 }
