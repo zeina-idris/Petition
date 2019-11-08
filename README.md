@@ -12,7 +12,7 @@ A Petition for protecting Spanish Galgos (Greyhounds) from legal tradtitional to
 
 * Users registeration and user login
 
-<img src='public/images/Register.gif' >
+<img src='public/assets/images/Register.gif' >
 
 * Users have the option to provide some information about themselves.
 
