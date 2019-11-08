@@ -1,16 +1,17 @@
-<div class="homepage">
-    <h2>Sign our petition to save galgos</h2>
-    <h3>Let's be a voice for the voiceless</h3>
+<div id="img_bg"></div>
+<div class="canvas-homepage">
+  <span>Sign our petition to save galgos</span>
+  <span>Let's be a voice for the voiceless</span>
 
-
-    <form  action="/petition" method="POST">
-        <input type="hidden" name="_csrf" value="{{csrfToken}}">
-        <ul id="delete">
-            <input type="hidden" name="signature">
-            <canvas id="canvasId" width="300px" height="100px"></canvas> <br>
-            <button class="submit_btn" type='submit'>Submit</button>
-        </ul>
-    </form>
-
-    <h3><a href="/info">Edit your profile</a></h3>
+  <form  action="/petition" method="POST">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <ul id="delete">
+      <input type="hidden" name="signature">
+      <canvas id="canvasId" width="300px" height="100px"></canvas> <br>
+      <button class="submit_btn" type='submit'>Submit</button>
+    </ul>
+  </form>
+  <span>
+    <a href="/info">Edit your profile</a>
+  </span>
 </div>

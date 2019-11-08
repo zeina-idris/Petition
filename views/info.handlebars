@@ -1,12 +1,22 @@
-<form action="/info" method="POST">
+<div id="img_bg"></div>
+<form action="/info" method="POST" class="form-info">
 <input type="hidden" name="_csrf" value="{{csrfToken}}">
-    <div id="error">{{error}}</div>
-    <div id="info">
-        <ul>
-            <li><input type="text" name="age" placeholder="age(optional)"></li>
-            <li><input type="text" name="city" placeholder="city(optional)"></li>
-            <li><input type="text" name="homepage" placeholder="homepage(optional)"></li>
-            <li><button class="info_btn" type="submit">Continue</button></li>
-        </ul>
-    </div>
+  <div id="error">{{error}}</div>
+  <ul class="info">
+    <li>
+      <input type="text" name="age" placeholder="age(optional)">
+    </li>
+
+    <li>
+      <input type="text" name="city" placeholder="city(optional)">
+    </li>
+
+    <li>
+      <input type="text" name="homepage" placeholder="homepage(optional)">
+    </li>
+
+    <li>
+      <button class="info_btn" type="submit">Continue</button>
+    </li>
+  </ul>
 </form>

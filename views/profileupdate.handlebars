@@ -1,36 +1,35 @@
 <h1>General account settings</h1>
-
-    <form action="/profileupdate" method="post">
-        <input type="hidden" name="_csrf" value="{{csrfToken}}">
-        <div id="edit">
-        <ul>
-            <li>
-                <p>First name</p>
-            <input type="text" value="{{data.first}}" name="first">
-            </li>
-            <li>
-                <p>Last name</p>
-                <input type="text" value="{{data.last}}" name="last">
-            </li>
-            <li>
-                <p>Email Address</p>
-                <input type="email" value="{{data.email}}" name="email">
-            </li>
-            <li>
-                <p>Password</p>
-                <input type="password" name="password">
-            </li>
-            <li>
-                <p>Age</p>
-                <input type="text" value="{{data.age}}" name="age">
-            </li>
-            <li>
-                <p>City</p><input type="text" value="{{data.city}}" name="city">
-            </li>
-            <li>
-                <p>HomePage</p><input type="text" value="{{data.url}}" name="homepage">
-            </li>
-            <li><button class="edit_btn" type="submit">Update</button></li>
-        </ul>
-    </div>
-    </form>
+  <form action="/profileupdate" method="post" class="form-edit-profile">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <div class="edit">
+      <ul>
+        <li>
+          <p>First name</p>
+          <input type="text" value="{{data.first}}" name="first">
+        </li>
+        <li>
+          <p>Last name</p>
+          <input type="text" value="{{data.last}}" name="last">
+        </li>
+        <li>
+          <p>Email Address</p>
+          <input type="email" value="{{data.email}}" name="email">
+        </li>
+        <li>
+          <p>Password</p>
+          <input type="password" name="password">
+        </li>
+        <li>
+          <p>Age</p>
+          <input type="text" value="{{data.age}}" name="age">
+        </li>
+        <li>
+          <p>City</p><input type="text" value="{{data.city}}" name="city">
+        </li>
+        <li>
+          <p>HomePage</p><input type="text" value="{{data.url}}" name="homepage">
+        </li>
+        <li><button class="edit_btn" type="submit">Update</button></li>
+      </ul>
+  </div>
+  </form>
