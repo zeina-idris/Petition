@@ -11,9 +11,9 @@ A Petition for protecting Spanish Galgos (Greyhounds) from legal tradtitional to
 * PostgreSQL Database
 * Redis
 
-## USE IT ON YOUR MACHINE:
+## SET UP:
  * Basically clone the project into your git command.
- * $ npm start
+ * ```$ npm start```
 
 ## Features
 
