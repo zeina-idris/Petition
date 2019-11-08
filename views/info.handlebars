@@ -2,23 +2,21 @@
 <form action="/info" method="POST">
 <input type="hidden" name="_csrf" value="{{csrfToken}}" class="form-info">
   <div id="error">{{error}}</div>
-  <div>
-    <ul class="info">
-      <li>
-        <input type="text" name="age" placeholder="age(optional)">
-      </li>
+  <ul class="info">
+    <li>
+      <input type="text" name="age" placeholder="age(optional)">
+    </li>
 
-      <li>
-        <input type="text" name="city" placeholder="city(optional)">
-      </li>
+    <li>
+      <input type="text" name="city" placeholder="city(optional)">
+    </li>
 
-      <li>
-        <input type="text" name="homepage" placeholder="homepage(optional)">
-      </li>
+    <li>
+      <input type="text" name="homepage" placeholder="homepage(optional)">
+    </li>
 
-      <li>
-        <button class="info_btn" type="submit">Continue</button>
-      </li>
-    </ul>
-  </div>
+    <li>
+      <button class="info_btn" type="submit">Continue</button>
+    </li>
+  </ul>
 </form>
