@@ -19,10 +19,19 @@ body {
 }
 
 .homepage {
-  width: 600px;
   margin-top: 150px;
   padding: 30px;
   background-color: rgba(255, 255, 255, 0.801);
+}
+
+.canvas-homepage {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 1px black;
+  margin-top: 200px;
+  padding: 10px;
+  text-align: center;
+  width: 600px;
 }
 
 #img_bg {
@@ -44,11 +53,11 @@ a {
 /*Petition page*/
 
 #canvasId {
-  border: solid white 2px;
+  border: solid #19232c 1px;
 }
 
 #error {
-  font-size: 10px;
+  font-size: 15px;
   color: #BB3622;
 }
 
@@ -157,7 +166,7 @@ input[type=email] {
   background-color: rgba(249, 249, 249, 0.797);
   padding: 10px;
   width: 500px;
-  height: 550px;
+  height: 470px;
   font-size: 20px; 
   border-radius: 5px;
 }
@@ -177,6 +186,7 @@ input[type=email] {
 }
 
 #register_error{
+  font-size: 15px;
   color: #BB3622;
 }
 
@@ -204,8 +214,8 @@ input[type=email] {
 .form-login {
   background-color: rgba(249, 249, 249, 0.797);
   padding: 10px;
-  width: 500px;
-  height: 450px;
+  width: 400px;
+  height: 380px;
   font-size: 20px; 
   border-radius: 5px;
 }

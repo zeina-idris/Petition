@@ -29,7 +29,6 @@ var paint;
 
     canvas.mouseup(function(e){
         paint = false;
-        console.log('this event happened');
         $('input[name=signature]').val($('#canvasId')[0].toDataURL());
     })
 
